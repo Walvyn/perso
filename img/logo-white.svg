@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="logo" width="350" height="400">
+    <defs>
+        <filter id="filter-shadow" x="0" y="0" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20"/>
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="25"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+    </defs>
+    <path d="M 115 150 q -10 -60 160 -145" style="stroke:#e0e0e0;fill:#e0e0e0;stroke-linejoin:bevel;stroke-width:2px;"/>
+    <polyline points="115,150 190,150 145,240 5,100 155,325 270,115 215,115 275,5 115,150" style="stroke:white;fill:white;stroke-width:2px;"/>
+    <polyline points="145,125 175,125 175,95 145,125" style="fill:#ff9800;stroke:#ff9800;stroke-width:2px;"/>
+    <path d="M 145 125 q 10 -20 30 -30" style="fill:#ff9800;stroke:#ff9800;stroke-linejoin:bevel;stroke-width:2px;"/>
+</svg>
