@@ -1,0 +1,402 @@
+/* ELEMENTS */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Roboto;
+	background-color: #f7f7f7;
+}
+
+h3 {
+	margin: 30px 0 15px 0;
+}
+
+/* CLASS */
+
+.inline-icon {
+	vertical-align: text-bottom;
+}
+
+.justify-align {
+	text-align: justify;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bolder {
+	font-weight: bolder;
+}
+
+/* HEADER */
+
+nav {
+	background-color: white;
+}
+
+.banner {
+	height: 500px;
+	
+	background-image: url('/public/images/banner.jpg');
+	background-position-y: -200px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner h1,
+.banner h2 {
+	margin: 0;
+	color: white;
+	text-shadow: 0 0 2px #000, 0 0 4px #000;
+}
+
+/* PROFIL */
+
+.me-container img {
+	width: 200px;
+	position: relative;
+	top: 100%;
+	margin: -100px auto 0 auto;
+
+	border: 8px solid #f7f7f7;;
+	border-radius: 50%;
+}
+
+.infos-container {
+	margin-top: 10px;
+}
+
+.infos-container i {
+	font-size: 26px !important;
+}
+
+.infos-container span {
+	font-size: 18px;
+}
+
+.infos-container a {
+	color: black;
+}
+
+/* TIMELINE */
+
+#timeline .now {
+	margin: 25px 0;
+	
+	font-weight: bold;
+}
+
+.timeline-container {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	margin: 0 auto;
+}
+
+.timeline-container::after {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+
+	content: "";
+	border-left: 1px solid rgba(191, 191, 191, 0.4);
+}
+
+.timeline-container .timeline-card {
+	position: relative;
+	display: block;
+	z-index: 2;
+	width: 45%;
+	height: auto;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+.timeline-card .head {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 85px;
+
+	color: #fff;
+	background-color: #FF8C00;
+	font-weight: 400;
+}
+
+.timeline-card .head.school {
+	background-color: #3fa6ee;
+}
+
+.timeline-card .head::after {
+	position: absolute;
+	content: "";
+	color: #FF8C00;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+
+.timeline-card .head.school::after {
+	color: #3fa6ee;
+}
+
+.timeline-card .head::before {
+	position: absolute;
+	content: "";
+	width: 9px;
+	height: 9px;
+	background-color: #bdbdbd;
+	border-radius: 9px;
+	box-shadow: 0px 0px 2px 8px #f7f7f7;
+	left: 0;
+}
+
+.timeline-card:nth-child(odd) .head::after {
+	border-left-width: 15px;
+	border-left-style: solid;
+	left: 100%;
+}
+
+.timeline-card:nth-child(odd) .head::before {
+	margin-left: calc(110% + 2px);
+}
+
+.timeline-card .head i {
+	height: 60px;
+	padding: 5px;
+}
+
+.timeline-card .head h4 {
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: inherit;
+	letter-spacing: 2px;
+	margin: 0;
+	line-height: 1rem;
+}
+
+.timeline-card .head h4 span {
+	display: block;
+	margin-top: 10px;
+	text-align: right;
+	
+	font-size: 0.9rem;
+}
+
+.timeline-card .head h4 span a {
+	color: white;
+}
+
+.timeline-card .body {
+	background: #fff;
+	border: 1px solid rgba(191, 191, 191, 0.4);
+	border-top: 0;
+	padding: 15px;
+}
+
+.timeline-card .body .xp-location {
+	font-weight: lighter;
+}
+
+.timeline-card .body .xp-title {
+	margin-top: 15px;
+
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.xp-skills-list svg,
+.xp-skills-list img {
+	width: 10%;
+	vertical-align: middle;
+}
+
+/* SKILLS */
+
+.skills-list {
+	margin-top: 25px;
+}
+
+.skills-list > div {
+	height: 140px;
+	display: flex;
+	align-items: center;
+}
+
+.skill-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.skill-container img,
+.skill-container svg {
+	width: 70%;
+}
+
+.level-container .level-bar {
+	display: inline-block;
+	margin-left: 2px;
+	border: thin solid #FF8C004D;
+	background-color: #FAFAFA;
+}
+
+.level-container .l-1 {
+	width: 15px;
+	height: 15px;
+}
+
+.level-container .l-2 {
+	width: 15px;
+	height: 25px;
+}
+
+.level-container .l-3 {
+	width: 15px;
+	height: 40px;
+}
+
+.level-container .l-4 {
+	width: 15px;
+	height: 55px;
+}
+
+.level-container .l-5 {
+	width: 15px;
+	height: 70px;
+}
+
+.level-container.level-1 .l-1,
+.level-container.level-2 .l-1,
+.level-container.level-2 .l-2,
+.level-container.level-3 .l-1,
+.level-container.level-3 .l-2,
+.level-container.level-3 .l-3,
+.level-container.level-4 .l-1,
+.level-container.level-4 .l-2,
+.level-container.level-4 .l-3,
+.level-container.level-4 .l-4,
+.level-container.level-5 .l-1,
+.level-container.level-5 .l-2,
+.level-container.level-5 .l-3,
+.level-container.level-5 .l-4,
+.level-container.level-5 .l-5 {
+	background-color: #FF8C00;
+}
+
+/* TRAVELS */
+
+.travels-world-map {
+	height: 450px;
+}
+
+.travels-world-map .jvectormap-zoomin,
+.travels-world-map .jvectormap-zoomout {
+	line-height: 6px;
+}
+
+/* HOBBIES */
+
+.hobbies-list .col {
+	margin-bottom: 25px;
+}
+
+.hobby-image img,
+.hobby-image svg {
+	width: 50%;
+}
+
+/* FOOTER */
+
+.page-footer {
+	padding-top: 0;
+	background-color: #383f47;
+}
+
+/* RESPONSIBLE */
+
+@media (min-width: 1200px) {
+	.travels-world-map {
+		height: 550px;
+	}
+
+	.timeline-card:nth-child(even) .head h4 span {
+		text-align: left;
+	}
+
+	.timeline-card:nth-child(even) {
+		margin-top: -180px;
+	}
+
+	.timeline-card:nth-child(even) {
+		left: 55%;
+	}
+
+	.timeline-card:nth-child(even) .head::after {
+		border-right-width: 15px;
+		border-right-style: solid;
+		right: 100%;
+	}
+
+	.timeline-card:nth-child(even) .head::before {
+		margin-left: calc(-10% - 9px)
+	}
+}
+
+@media (max-width: 1199px) {
+	.timeline-card .head::after {
+		display: none;
+	}
+
+	.timeline-card .head::before {
+		display: none;
+	}
+
+	.timeline-container {
+		align-items: center;
+	}
+
+	.timeline-container .timeline-card {
+		width: 75%;
+	}
+}
+
+@media (max-width: 991px) {
+	.timeline-container .timeline-card {
+		width: 80%;
+	}
+}
+
+@media (max-width: 599px) {
+	h1 {
+		font-size: 3.2rem;
+	}
+
+	h2 {
+		font-size: 2.56rem;
+	}
+
+	.timeline-container .timeline-card {
+		width: 100%;
+	}
+
+	.xp-skills-list svg,
+	.xp-skills-list img {
+		width: 15%;
+	}
+}

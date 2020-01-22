@@ -1,0 +1,9 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105pt" height="120pt" viewBox="0 0 105 120" version="1.1">
+	<g>
+		<path style="fill-rule:nonzero;fill:rgb(100%,48.235294%,0%);fill-opacity:1;stroke-width:2;stroke-linecap:butt;stroke-linejoin:bevel;stroke:rgb(100%,48.235294%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 115 150 C 108.333333 110 161.666667 61.666667 275 5 " transform="matrix(0.3,0,0,0.3,0,0)"/>
+		<path style="fill-rule:nonzero;fill:rgb(100%,54.901961%,0%);fill-opacity:1;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,54.901961%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 115 150 L 190 150 L 145 240 L 5 100 L 155 325 L 270 115 L 215 115 L 275 5 L 115 150 " transform="matrix(0.3,0,0,0.3,0,0)"/>
+		<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 145 125 L 175 125 L 175 95 L 145 125 " transform="matrix(0.3,0,0,0.3,0,0)"/>
+		<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:2;stroke-linecap:butt;stroke-linejoin:bevel;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 145 125 C 151.666667 111.666667 161.666667 101.666667 175 95 " transform="matrix(0.3,0,0,0.3,0,0)"/>
+	</g>
+</svg>
