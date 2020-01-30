@@ -18,7 +18,7 @@
 				"Développement d'API interne et externe",
 				"Développement de scripts de mise à jour AdWords",
 				"Développement d'un Backend de mise à jour de produits",
-				"Optimisation d'un système de deploiement automatique de site",
+				"Optimisation d'un système de déploiement automatique de site",
 				"Développement d'outils internes",
 				"Mise à jour et optimisation des outils et solutions existantes",
 				"Rédaction d'un cahier des charges",
@@ -73,7 +73,7 @@
 			'tasks' => [
 				"Développement d'un Backend de traitement de fichier",
 				"Développement d'outils internes",
-				"Ajout de nouvelles fonctionalités sur des projets existants",
+				"Ajout de nouvelles fonctionnalités sur des projets existants",
 				"Développement d'APIs internes",
 			],
 			'skills' => ['PHP', 'CodeIgniter', 'Slim', 'MySQL', 'Javascript', 'jQuery', 'HTML5', 'CSS3', 'Bootstrap', 'Git', 'Linux', 'Apache', 'Nginx', 'Bash']
@@ -91,10 +91,10 @@
 				'end' => 'Octobre 2014'
 			],
 			'tasks' => [
-				"Développement d'un regroupement produits",
+				"Développement d'un regroupement produit",
 				"Développement d'APIs internes",
 				"Développement d'une interface de monitoring",
-				"Développement d'un système de deploiement automatique de site",
+				"Développement d'un système de déploiement automatique de site",
 				"Intégration de nouvelles pages sur les comparateurs"
 			],
 			'skills' => ['PHP', 'Slim', 'MySQL', 'Javascript', 'jQuery', 'HTML5', 'CSS3', 'Bootstrap', 'Git', 'Linux', 'Apache', 'Nginx', 'Bash']
@@ -112,7 +112,7 @@
 				'end' => 'Septembre 2013'
 			],
 			'tasks' => [
-				"Connaître et comprendre les caluls d'un moteur Excel",
+				"Connaître et comprendre les calculs d'un moteur Excel",
 				"Adapter son travail aux besoins du client",
 				"Développement d'une interface Web à partir d'un moteur Excel"
 			],
@@ -185,6 +185,7 @@
 					<?php if(isset($xp['skills'])) : ?>
 						<div class="xp-title">Compétences :</div>
 						<div class="xp-skills-list">
+                            <div class="overlay-transparent"></div>
 							<?php foreach ($xp['skills'] as $skill) : ?>
 								<?php $path = __DIR__ . '/../public/images/'.strtolower($skill); ?>
 								<?php if (file_exists($path . '.svg')): ?>

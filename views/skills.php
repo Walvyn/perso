@@ -30,6 +30,7 @@
 	<div class="row skills-list">
 		<?php foreach($skills as $skill => $level) : ?>
 			<div class="col offset-s1 s5 m3 xl2 tooltipped" data-position="right" data-tooltip="<?= $skill ?>">
+                <div class="overlay-transparent"></div>
 				<div class="skill-container">
 					<?php $path = __DIR__ . '/../public/images/'.strtolower($skill); ?>
 					<?php if (file_exists($path . '.svg')): ?>

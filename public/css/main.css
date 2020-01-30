@@ -34,6 +34,13 @@ h3 {
 	font-weight: bolder;
 }
 
+.overlay-transparent {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 250;
+}
+
 /* HEADER */
 
 nav {
@@ -185,6 +192,7 @@ nav {
 	letter-spacing: 2px;
 	margin: 0;
 	line-height: 1rem;
+	margin-right: 30px;
 }
 
 .timeline-card .head h4 span {
@@ -217,6 +225,10 @@ nav {
 	font-size: 1.2rem;
 }
 
+.xp-skills-list {
+	position: relative;
+}
+
 .xp-skills-list svg,
 .xp-skills-list img {
 	width: 10%;
@@ -233,6 +245,7 @@ nav {
 	height: 140px;
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .skill-container {
@@ -314,6 +327,7 @@ nav {
 
 .hobbies-list .col {
 	margin-bottom: 25px;
+	position: relative;
 }
 
 .hobby-image img,

@@ -16,6 +16,7 @@
 							<i class="material-icons">menu</i>
 						</a>
 						<a href="#home" class="brand-logo">
+                            <div class="overlay-transparent"></div>
 							<?php include __DIR__ . '/../public/images/logo.svg'; ?>
 						</a>
 						<ul class="right hide-on-med-and-down">

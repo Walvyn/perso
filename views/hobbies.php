@@ -11,6 +11,7 @@
 	<div class="row hobbies-list">
 		<?php foreach($hobbies as $hobby) : ?>
 			<div class="col s6 m4 l4 center-align">
+                <div class="overlay-transparent"></div>
 				<div class="hobby-image">
 					<?php $path = __DIR__ . '/../public/images/'.strtolower(stripAccents($hobby)); ?>
 					<?php if (file_exists($path . '.svg')): ?>
